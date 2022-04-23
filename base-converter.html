@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myStyle.css">
+    <title>Base number converter</title>
+</head>
+<body>
+    <div class="parentCenter">
+        <table class="childCenter" style="padding: 100px;">
+            <tr>
+                <td>
+                    <h1>Base 2, 8 and 16 to base 10 Converter</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="">
+                        <table class="childCenter">
+                            <tr>
+                                <td>
+                                    <label for="number">Enter number</label><br>
+                                    <input type="text" id="number" name="number" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="fromNumber">From base</label><br>
+                                    <select name="fromBase" id="fromBase">
+                                        <option value="2">2</option>
+                                        <option value="8">8</option>
+                                        <option value="16">16</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="toNumber">To base 10</label><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" onclick="convertBase()">Convert</button>
+                                    <button type="reset">Reset</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="result">Result number</label><br>
+                                    <textarea name="result" id="result" cols="30" rows="2" readonly disabled style="font-size: large;"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+</html>
