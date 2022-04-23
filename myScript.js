@@ -1,6 +1,6 @@
 function convertBase() {
     let number = "";
-    number = document.getElementById("number").value;
+    number = document.getElementById("number").value.toUpperCase();
     let fromBase = Number(document.getElementById("fromBase").value);
     try {
         if (isInGivenBase(number, fromBase)) {
@@ -21,7 +21,6 @@ function isInGivenBase(str, base)
 {
     try {
         if (str === "") return false;
-        else if (isNaN(str)) return false;
         else 
         {
             if (base > 16) return false;
